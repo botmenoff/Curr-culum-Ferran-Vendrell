@@ -1,0 +1,178 @@
+/* Reglas por defecto */
+
+* {
+    box-sizing: border-box;
+    /* font */
+    font-family: "Averta CY", sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+
+/*section-1*/
+
+#section-1 {
+    width: 100%;
+    float: left;
+    padding-bottom: 20%;
+    padding-top: 20%;
+    background-image: url('../img/S.jpg');
+}
+
+#section-1 h1 {
+    font-size: 50px;
+    color: white;
+    text-align: center;
+}
+
+#section-1 h3 {
+    color: white;
+    text-align: center;
+    padding-top: 12%;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/*smooth scrolling*/
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/*navigation bar*/
+
+body {
+    font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+
+/*column-2*/
+
+.column-2 {
+    width: 50%;
+    float: left;
+}
+
+
+/*section-3*/
+
+#section-3 {
+    width: 100%;
+    float: left;
+    padding: 9% 11%;
+    padding-bottom: 1%;
+}
+
+#section-3 img {
+    padding-left: 20%;
+    padding-top: 5%;
+}
+
+#section-3 li {
+    font-size: 25px;
+}
+
+
+/*section-4*/
+
+#section-4 {
+    width: 100%;
+    float: left;
+    padding: 1% 11%;
+}
+
+
+/*section-5*/
+
+#section-5 {
+    width: 100%;
+    float: left;
+    padding: 1% 11%;
+}
+
+
+/*section-6*/
+
+#section-6 {
+    width: 100%;
+    float: left;
+    padding: 1% 11%;
+}
+
+
+/*Colores de fondo*/
+
+#black {
+    background-color: rgb(58, 58, 58);
+}
+
+
+/*Estilos generales*/
+
+h2 {
+    font-size: 45px;
+}
+
+li {
+    font-size: 25px;
+}
+
+p {
+    font-size: 25px;
+}
