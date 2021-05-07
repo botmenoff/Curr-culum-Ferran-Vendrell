@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Currículum Ferran</title>
+    <script src="../js/codigo.js"></script>
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="icon" type="image/png" href="../img/icon.svg" sizes="64x64">
 </head>
@@ -31,8 +32,8 @@
             <a href="#section-7">Languages ​​and stays abroad</a>
             <a href="#section-6">Professional competencies</a>
             <a href="#section-5">Formation</a>
-            <a href="#section-3">Personal data</a>
             <a href="#section-4">Profesional objective</a>
+            <a href="#section-3">Personal data</a>
             <a href="#section-0">Presentation video</a>
             <a href="#section-1"><img src="../img/UARW.png" alt="NO SE VE" width="2%"></a>
         </div>
@@ -40,7 +41,7 @@
     <div id="section-0">
         <details>
             <summary>
-                <h2>⇣ Presentation video</h2>
+                <h2 title="CLICK ME TO SEE MORE">⇣ Presentation video</h2>
             </summary>
             <iframe width="80%" height="500" src="https://www.youtube.com/embed/l6kaN4ZooCs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </details>
@@ -49,7 +50,7 @@
         <div class="column-2">
             <details>
                 <summary>
-                    <h2>⇣ Personal data</h2>
+                    <h2 title="CLICK ME TO SEE MORE">⇣ Personal data</h2>
                 </summary>
                 <ul>
                     <li><strong>Date of birth:</strong> 8/9/2003</li>
@@ -72,7 +73,7 @@
         <div class="column-2">
             <details>
                 <summary>
-                    <h2>⇣ Profesional objectivel</h2>
+                    <h2 title="CLICK ME TO SEE MORE">⇣ Profesional objectivel</h2>
                 </summary>
                 <p>Gain work and professional experience to continue improving the IT profession and personal skills.</p>
             </details>
@@ -82,7 +83,7 @@
         <div class="column-2">
             <details>
                 <summary>
-                    <h2>⇣ Formation</h2>
+                    <h2 title="CLICK ME TO SEE MORE">⇣ Formation</h2>
                 </summary>
                 <ul>
                     <li>
@@ -106,7 +107,7 @@
         <div class="column-2">
             <details>
                 <summary>
-                    <h2>⇣ Personal competitions </h2>
+                    <h2 title="CLICK ME TO SEE MORE">⇣ Personal competitions </h2>
                 </summary>
                 <ul>
                     <li> Computer equipment repair </li>
@@ -129,7 +130,7 @@
                 width="95%" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
         <div class="column-2">
-            <p>Summer 2019, stayed with a host family in Swansea (Gales-Gran Bretaña)</p>
+            <p>Summer 2019, stayed with a host family in Swansea (Gales)</p>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19814.98170625884!2d-3.965506403188013!3d51.62554078980699!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x486e45555a4e97b1%3A0x3d77128e2fe7cb74!2sSwansea%2C%20Regne%20Unit!5e0!3m2!1sca!2ses!4v1619789724270!5m2!1sca!2ses"
                 width="95%" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
@@ -161,7 +162,7 @@
     <div id="section-8">
         <details>
             <summary>>
-                <h2>⇣ Hobbies</h2>
+                <h2 title="CLICK ME TO SEE MORE">⇣ Hobbies</h2>
             </summary>
             <p>Every weekend I go to skate with my friends at the skatepark, I have a great time and I do a lot of exercise. <br> My main hobbies are: practicing any type of sport (if it is in a better team), listening to music, and sharing all possible
                 times with friends.
@@ -172,7 +173,7 @@
     <div id="section-9">
         <details>
             <summary>
-                <h2>⇣ Personal competitions</h2>
+                <h2 title="CLICK ME TO SEE MORE">⇣ Personal competitions</h2>
             </summary>
             <div class="column-3">
                 <p>autonomy</p>
@@ -237,27 +238,30 @@
     </div>
 
     <div id="section-11">
-        <select name="language" id="language" onchange="language()">
-        <option value="ES" selected>Español</option>
-        <option value="EN">English</option>
-    </select>
-    </div>
-    <script>
-        window.onscroll = function() {
-            myFunction()
-        };
+        <h1>Choose your language</h1>
+        <div class="section-11">
+            <select name="language" id="language" onchange="language()">
+             <option value="EN" selected>English</option>
+             <option value="ES">Español</option>
+         </select>
 
-        var navbar = document.getElementById("navbar");
-        var sticky = navbar.offsetTop;
+        </div>
+        <script>
+            window.onscroll = function() {
+                myFunction()
+            };
 
-        function myFunction() {
-            if (window.pageYOffset >= sticky) {
-                navbar.classList.add("sticky")
-            } else {
-                navbar.classList.remove("sticky");
+            var navbar = document.getElementById("navbar");
+            var sticky = navbar.offsetTop;
+
+            function myFunction() {
+                if (window.pageYOffset >= sticky) {
+                    navbar.classList.add("sticky")
+                } else {
+                    navbar.classList.remove("sticky");
+                }
             }
-        }
-    </script>
+        </script>
 
 </body>
 

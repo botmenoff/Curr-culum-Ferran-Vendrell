@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Currículum Ferran</title>
+    <script src="./js/codigo.js"></script>
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="icon" type="image/png" href="./img/icon.svg" sizes="64x64">
 </head>
@@ -31,16 +32,17 @@
             <a href="#section-7">Idiomas y estancias en el extranjero</a>
             <a href="#section-6">Competencias profesionales</a>
             <a href="#section-5">Formación</a>
-            <a href="#section-3">Datos personales</a>
             <a href="#section-4">Objetivo porfesional</a>
+            <a href="#section-3">Datos personales</a>
             <a href="#section-0">Video de presentación</a>
             <a href="#section-1"><img src="./img/UARW.png" alt="NO SE VE" width="2%"></a>
         </div>
     </div>
+
     <div id="section-0">
         <details>
             <summary>
-                <h2>⇣ Video de presentación</h2>
+                <h2 title="CLICAME">⇣ Video de presentación</h2>
             </summary>
             <iframe width="80%" height="500" src="https://www.youtube.com/embed/DDO9uAVc_qo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -50,7 +52,7 @@
         <div class="column-2">
             <details>
                 <summary>
-                    <h2>⇣ Datos personales</h2>
+                    <h2 title="CLICAME">⇣ Datos personales</h2>
                 </summary>
                 <ul>
                     <li><strong>Fecha de nacimiento:</strong> 8/9/2003</li>
@@ -73,7 +75,7 @@
         <div class="column-2">
             <details>
                 <summary>
-                    <h2>⇣ Objetivo profesional</h2>
+                    <h2 title="CLICAME">⇣ Objetivo profesional</h2>
                 </summary>
                 <p>Adquirir experiencia laboral y profesional para continuar mejorando en la profesión de informático y en habilidades personales. </p>
             </details>
@@ -83,7 +85,7 @@
         <div class="column-2">
             <details>
                 <summary>
-                    <h2>⇣ Formación</h2>
+                    <h2 title="CLICAME">⇣ Formación</h2>
                 </summary>
                 <ul>
                     <li>
@@ -107,7 +109,7 @@
         <div class="column-2">
             <details>
                 <summary>
-                    <h2>⇣ Competencias profesionales </h2>
+                    <h2 title="CLICAME">⇣ Competencias profesionales </h2>
                 </summary>
                 <ul>
                     <li> Reparació de equipos informáticos </li>
@@ -162,7 +164,7 @@
     <div id="section-8">
         <details>
             <summary>>
-                <h2>⇣ Aficiones</h2>
+                <h2 title="CLICAME">⇣ Aficiones</h2>
             </summary>
             <p>Cada fin de semana voy a patinar con mis amigos al skatepark, me lo paso muy bién y hago mucho ejercício. <br> Mis principales aficiones son: practicar cualquier tipo de deporte (si es en equipo mejor), escuchar música, y compartir todos los
                 ratos posibles con los amigos.
@@ -173,7 +175,7 @@
     <div id="section-9">
         <details>
             <summary>
-                <h2>⇣ Competéncias personales</h2>
+                <h2 title="CLICAME">⇣ Competéncias personales</h2>
             </summary>
             <div class="column-3">
                 <p>Autonomia</p>
@@ -236,13 +238,17 @@
         </div>
 
     </div>
-    <div id="section-11">
-        <select name="language" id="language" onchange="language()">
-            <option value="ES" selected>Español</option>
-            <option value="EN">English</option>
-        </select>
-    </div>
 
+    <div id="section-11">
+        <div class="section-11">
+            <h1>Escoje tu idioma</h1>
+            <select name="language" id="language" onchange="language()">
+             <option value="ES" selected>Español</option>
+             <option value="EN">English</option>
+         </select>
+
+        </div>
+    </div>
     <script>
         window.onscroll = function() {
             myFunction()
